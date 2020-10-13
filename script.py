@@ -15,8 +15,8 @@ password = driver.find_element_by_xpath('//*[@id="actlpass"]')
 
 
 #Change user name and passwords with your icloud username and password
-username.send_keys('17SCSE1077021')  ##################################### Change This Text ############################
-password.send_keys('Ag#12345')  ##################################### Change This Text ############################
+username.send_keys('username')  ##################################### Change This Text ############################
+password.send_keys('password')  ##################################### Change This Text ############################
 
 time.sleep(1)
 
@@ -36,18 +36,16 @@ time.sleep(2)
 selectClass = driver.find_element_by_xpath('//*[@id="classid"]')
 sel = Select(selectClass)
 #change this text
-sel.select_by_visible_text('B.Tech in CSBA 2017-18 IV Sem VII')  ##################################### Change This Text ############################
+sel.select_by_visible_text('B.Tech in CSDA 2017-18 IV Sem VII')  ##################################### Change This Text ############################
 
 
 time.sleep(1)
 search = driver.find_element_by_class_name('fa-search')
-# search = driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div[3]/div/div[2]/div/form/div/div[3]/button')
 search.click()
 
 time.sleep(2)
 
 start = driver.find_element_by_class_name('btn-rounded')
-# start = driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div[3]/div/div[3]/div[2]/center/input')
 start.click()
 
 time.sleep(2)
