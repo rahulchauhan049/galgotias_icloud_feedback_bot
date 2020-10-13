@@ -36,7 +36,7 @@ time.sleep(2)
 selectClass = driver.find_element_by_xpath('//*[@id="classid"]')
 sel = Select(selectClass)
 #change this text
-sel.select_by_visible_text('B.Tech in CSDA 2017-18 IV Sem VII')  ##################################### Change This Text ############################
+sel.select_by_visible_text('B.Tech in CSBA 2017-18 IV Sem VII')  ##################################### Change This Text ############################
 
 
 time.sleep(1)
@@ -48,12 +48,13 @@ time.sleep(2)
 start = driver.find_element_by_class_name('btn-rounded')
 start.click()
 
-time.sleep(2)
+time.sleep(4)
 
 
 next = driver.find_element_by_class_name('fa-arrow-alt-circle-right')
 
 try:
+    time.sleep(3)
     while next:                 
         radios = driver.find_elements_by_class_name('yn--1')
 
