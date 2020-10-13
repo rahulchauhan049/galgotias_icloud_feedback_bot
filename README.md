@@ -11,7 +11,7 @@ You may not want to spends hours filling 39 questions (some with required commen
 ---
 ## How to use
 
-Using this scipt is as easy as running the file. But you need webdriver and selenium for it. Feel free to google how to install webdriver and selenium for your OS.
+Using this scipt is as easy as running the file. But you need ```webdriver``` and ```selenium``` for it. Feel free to google how to install webdriver and selenium for your OS.
 
  - Download the script/clone the repo
  - Open script and replace few things username and password with your icloud username and password.
