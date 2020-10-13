@@ -98,5 +98,6 @@ try:
                 None
 
         next.click()
+        time.sleep(5)
 except:
     None
