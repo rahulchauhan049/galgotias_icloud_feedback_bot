@@ -1,8 +1,9 @@
+#You have to download chromedriver for running this script,you can get it here-https://chromedriver.chromium.org/downloads
 import time
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
 
-driver = webdriver.Chrome('D:/webdriver/chromedriver.exe')
+driver = webdriver.Chrome('Add path of Chromedriver here')
 url = "https://gu.icloudems.com/corecampus/index.php"
 
 # Opening the website
@@ -14,8 +15,8 @@ username = driver.find_element_by_xpath('//*[@id="useriid"]')
 password = driver.find_element_by_xpath('//*[@id="actlpass"]')
 
 # Change user name and passwords with your icloud username and password
-username.send_keys('17SCSE112003')  ##################################### Change This Text ############################
-password.send_keys('Gourav8211@')  ##################################### Change This Text ############################
+username.send_keys('Username')  ##################################### Change This Text ############################
+password.send_keys('Password')  ##################################### Change This Text ############################
 
 time.sleep(1)
 
@@ -35,17 +36,11 @@ sel = Select(selectClass)
 sel.select_by_index(1)
 
 time.sleep(10)
-#search = driver.find_element_by_class_name('fa-search')
-# search = driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div[3]/div/div[2]/div/form/div/div[3]/button')
-#search.click()
-
-
 
 start = driver.find_element_by_class_name('btn-rounded')
-#start = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div/div[3]/div[2]/div[2]/center/input')
 start.click()
 
-time.sleep(2)
+time.sleep(5)
 
 next = driver.find_element_by_class_name('fa-arrow-alt-circle-right')
 
@@ -92,6 +87,6 @@ try:
                 None
 
         next.click()
-        time.sleep(6)
+        time.sleep(5)
 except:
     None
