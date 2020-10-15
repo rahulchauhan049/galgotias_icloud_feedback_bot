@@ -39,12 +39,11 @@ time.sleep(5)
 start = driver.find_element_by_class_name('btn-rounded')
 start.click()
 
-time.sleep(5)
-
-next = driver.find_element_by_class_name('fa-arrow-alt-circle-right')
+next = driver.find_element_by_xpath('/html/body/div[1]/div/div/center/div[1]/form[1]/div[3]/div/button')
 
 try:
     while next:
+        time.sleep(5)
         radios = driver.find_elements_by_class_name('yn--1')
 
         for radio in radios:
