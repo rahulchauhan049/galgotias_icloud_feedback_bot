@@ -34,7 +34,7 @@ sel = Select(selectClass)
 
 sel.select_by_index(1)
 
-time.sleep(10)
+time.sleep(5)
 
 start = driver.find_element_by_class_name('btn-rounded')
 start.click()
