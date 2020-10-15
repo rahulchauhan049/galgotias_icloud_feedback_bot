@@ -15,7 +15,6 @@ Using this scipt is as easy as running the file. But you need ```webdriver``` an
 
  - Download the script/clone the repo
  - Open script and replace few things username and password with your icloud username and password.
- - Replace line 39 by your own course. (I suggest you to open icloud and copy paste it here.)
 - Run the script and wait for it to reach the end.
 - If everything's ok, press submit.
 
