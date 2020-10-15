@@ -70,7 +70,7 @@ try:
 
         for suggestion_box in suggestion_boxes:
             try:
-                suggestion_box.send_keys('Good Teacher')
+                suggestion_box.send_keys('Good')
             except:
                 None
 
