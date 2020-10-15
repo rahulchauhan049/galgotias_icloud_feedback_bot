@@ -1,4 +1,3 @@
-#You have to download chromedriver for running this script,you can get it here-https://chromedriver.chromium.org/downloads
 import time
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
@@ -82,7 +81,7 @@ try:
 
         for suggestion_box in suggestion_boxes:
             try:
-                suggestion_box.send_keys('Teacher')
+                suggestion_box.send_keys('Good Teacher')
             except:
                 None
 
