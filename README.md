@@ -1,7 +1,7 @@
 # galgotias_icloud_feedback_bot
 
 ---
-### Show some :heart: and :star: the repo to support the project
+## Show some :heart: and :star: the repo to support this project
 ---
  
 This bot is made to automate the process of filling feedback forms of galgotias university. 
