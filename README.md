@@ -14,7 +14,9 @@ You may not want to spends hours filling 39 questions (some with required commen
 Using this scipt is as easy as running the file. But you need ```webdriver``` and ```selenium``` for it. Feel free to google how to install webdriver and selenium for your OS.
 
  - Download the script/clone the repo
- - Open script and replace few things username and password with your icloud username and password.
+ - Install ```selenium``` using ``` pip install selenium```
+ - Install ```webdriver``` for your OS from [here](https://chromedriver.chromium.org/)
+ - Open script and replace few things such as path for webdriver, username and password with your icloud username and password.
 - Run the script and wait for it to reach the end.
 - If everything's ok, press submit.
 

@@ -2,7 +2,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
 
-driver = webdriver.Chrome('./chromedriver')
+driver = webdriver.Chrome('./chromedriver') ##################################### Change This Text with webdriver path which you downloaded ############################
 url = "https://gu.icloudems.com/corecampus/index.php"
 
 # Opening the website
@@ -14,8 +14,8 @@ username = driver.find_element_by_xpath('//*[@id="useriid"]')
 password = driver.find_element_by_xpath('//*[@id="actlpass"]')
 
 # Change user name and passwords with your icloud username and password
-username.send_keys('19scse1120008')  ##################################### Change This Text ############################
-password.send_keys('@Anu1234')  ##################################### Change This Text ############################
+username.send_keys('19scse123456')  ##################################### Change This Text With Admission Number ############################
+password.send_keys('password')  ##################################### Change This Text with Icloud Password ############################
 
 time.sleep(1)
 
