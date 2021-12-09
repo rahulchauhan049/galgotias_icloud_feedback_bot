@@ -2,7 +2,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
 
-driver = webdriver.Chrome('Add path of Chromedriver here')
+driver = webdriver.Chrome('./chromedriver')
 url = "https://gu.icloudems.com/corecampus/index.php"
 
 # Opening the website
@@ -14,27 +14,35 @@ username = driver.find_element_by_xpath('//*[@id="useriid"]')
 password = driver.find_element_by_xpath('//*[@id="actlpass"]')
 
 # Change user name and passwords with your icloud username and password
-username.send_keys('Username')  ##################################### Change This Text ############################
-password.send_keys('Password')  ##################################### Change This Text ############################
+username.send_keys('19scse1120008')  ##################################### Change This Text ############################
+password.send_keys('@Anu1234')  ##################################### Change This Text ############################
 
 time.sleep(1)
 
 login = driver.find_element_by_xpath('//*[@id="psslogin"]')
 login.click()
 
-time.sleep(2)
+time.sleep(1)
 
-feedback = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/div/div[7]/a/img')
+feedback = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/div/div[10]/a/img')
 feedback.click()
 
-time.sleep(2)
+time.sleep(1)
 
 selectClass = driver.find_element_by_xpath('//*[@id="classid"]')
 sel = Select(selectClass)
 
 sel.select_by_index(1)
 
-time.sleep(5)
+time.sleep(1)
+
+
+selectClass = driver.find_element_by_xpath('//*[@id="turn"]')
+sel = Select(selectClass)
+
+sel.select_by_index(1)
+
+time.sleep(1)
 
 start = driver.find_element_by_class_name('btn-rounded')
 start.click()
@@ -43,7 +51,7 @@ next = driver.find_element_by_xpath('/html/body/div[1]/div/div/center/div[1]/for
 
 try:
     while next:
-        time.sleep(5)
+        time.sleep(2)
         radios = driver.find_elements_by_class_name('yn--1')
 
         for radio in radios:
@@ -55,7 +63,7 @@ try:
         time.sleep(2)
         driver.execute_script("window.scroll(0, 0);")
 
-        stars = driver.find_elements_by_class_name('star-1')
+        stars = driver.find_elements_by_class_name('star-5')
 
         for star in stars:
             print(star)
@@ -85,6 +93,6 @@ try:
                 None
 
         next.click()
-        time.sleep(5)
+        time.sleep(2)
 except:
     None
