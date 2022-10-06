@@ -31,4 +31,5 @@ For beginers, you start by fixing issues that are submitted by other users.
 
 ---
 
-   :deciduous_tree: :mushroom: :shell: :fish: :frog: :honeybee: :turtle: :rooster: :whale2: :monkey: :octocat: 
+   :deciduous_tree: :mushroom: :shell: :fish: :frog: :honeybee: :turtle: :rooster: :whale2: :monkey: :octocat: :basketball_man:
+
