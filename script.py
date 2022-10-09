@@ -74,21 +74,11 @@ try:
 
         driver.execute_script("window.scroll(0, 0);")
 
-        comments_boxes = driver.find_elements_by_class_name('suggestion')
-
-        for comments_box in comments_boxes:
-            try:
-                comments_box.send_keys('Good')
-            except:
-                None
-
-        driver.execute_script("window.scroll(0, 0);")
-
         suggestion_boxes = driver.find_elements_by_class_name('suggestion_boxes')
 
         for suggestion_box in suggestion_boxes:
             try:
-                suggestion_box.send_keys('Good Teacher')
+                suggestion_box.send_keys('Good')
             except:
                 None
 
